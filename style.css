@@ -26,12 +26,6 @@ img {
   height: 100%;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 0.25rem;
-}
-
 /* header */
 
 header {
@@ -79,19 +73,56 @@ nav {
 /* main */
 
 main {
-  flex: 1;
 }
 
-article {
+main article {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   height: 15rem;
-  background-image: url(beautiful-cats.jpg);
-  background-size: contain;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.5rem;
 }
 
-article h1 {
+main article h1 {
   color: #fff;
   text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
 }
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main aside h2 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.customer-table {
+  width: 98%;
+}
+
+.customer-table td, .customer-table th {
+  padding: 0.5rem;
+}
+
+.customer-table th {
+  background-color: var(--seconday-color);
+  text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
+  color: #fff;
+  padding: 0.25rem 0;
+  text-align: center;
+}
+
+.customer-table tr {
+  text-align: center;
+}
+
+.customer-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.customer-table tr:hover {background-color: #ddd;}
