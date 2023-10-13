@@ -19,66 +19,79 @@ html {
 }
 
 body {
+  height: 100vh;
+}
+
+img {
+  height: 100%;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  padding: 0.25rem;
+}
+
+/* header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.25rem;
+}
+
+header img {
+  width: 3rem;
 }
 
 /* navigation bar */
 
 nav {
-  height: 80px;
   display: flex;
-  justify-content: space-between;
-  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--seconday-color);
+  height: 4rem;
 }
 
 .nav-btns {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .nav-btn {
-  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: var(--primary-color);
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.15rem 0.5rem;
   border: 1px solid var(--primary-color);
-  padding: 4px 8px;
-  font-size: 14px;
-  background-color: var(--seconday-color);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .nav-btn:hover {
-  border-radius: 8px;
-}
-
-header {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-header img {
-  object-fit: contain;
-  height: 100%;
-}
-
-header h1 {
-  font-weight: 400;
-  font-size: 18px;
+  border-radius: 0.45rem;
 }
 
 /* main */
 
 main {
   flex: 1;
-  background-color: var(--seconday-color);
 }
 
-/* footer */
+article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 15rem;
+  background-image: url(beautiful-cats.jpg);
+  background-size: contain;
+}
 
-footer {
-  height: 80px;
-  background-color: var(--primary-color);
+article h1 {
+  color: #fff;
+  text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
 }
