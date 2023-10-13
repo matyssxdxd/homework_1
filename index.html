@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snacker</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
     <nav>
       <header>
         <img src="logo.png" />
-        <h1>snacker</h1>
+        <p>snacker</p>
       </header>
       <div class="nav-btns">
         <a href="#" class="nav-btn">FAQ</a>
@@ -18,10 +18,70 @@
       </div>
     </nav>
     <main>
-      <h1>Find your little bestfriend's bestfriend!</h1>
+      <article>
+        <h1>Find your little bestfriend's bestfriend!</h1>
+      </article>
+      <aside>
+        <h2>Our users</h2>
+        <table>
+          <tr>
+            <td>🐱</td>
+            <td>🐱</td>
+            <td>Status</td>
+          </tr>
+          <tr>
+            <td>Muris</td>
+            <td>Mia</td>
+            <td>Married</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rudis</td>
+            <td>Daisy</td>
+            <td>Dating</td>
+          </tr>
+          <tr>
+            <td>Amurs</td>
+            <td>Stella</td>
+            <td>Divorced</td>
+          </tr>
+        </table>
+      </aside>
+
+      <section>
+        <h2>Reviews</h2>
+
+        <section>
+          <h3>Muris & Mia</h3>
+          <p>Meow, meow, meow! 😻😻</p>
+        </section>
+
+        <section>
+          <h3>Rudis & Daisy</h3>
+          <p>Meow, meow! Meeooow! 😺😻</p>
+        </section>
+
+        <section>
+          <h3>Amurs & Stella</h3>
+          <p>Meeeo-o-o-oo-w! Rrrr, hissss! 😾😾</p>
+        </section>
+      </section>
     </main>
     <footer>
-      <p>Homework</p>
+      <h2>Contact us</h2>
+      <form
+        method="GET"
+        action="mailto:matissp1302@gmail.com"
+        enctype="text/plain"
+      >
+        <label for="name">Your name:</label><br />
+        <input type="text" id="name" name="name" /><br />
+        <label for="email">Email:</label><br />
+        <input type="text" id="email" name="email" /><br />
+        <label for="mesasge">Message:</label><br />
+        <textarea style="resize: none" id="message"></textarea><br />
+        <input type="submit" value="Submit" />
+      </form>
     </footer>
   </body>
 </html>
