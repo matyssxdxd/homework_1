@@ -7,85 +7,91 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
       <header>
           <img src="logo.png" />
           <p>snacker</p>
       </header>
     </div>
-    <nav>      
-      <div class="nav-btns">
-        <a class="nav-btn" href="https://www.venta.lv/"  target="_blank">VeA</a>
-        <a class="nav-btn" href="https://validator.w3.org/" target="_blank">W3 Validator</a>
-        <a class="nav-btn" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML reference</a>
-        <a class="nav-btn" href="https://git-scm.com/" target="_blank">Git</a>
-    </div>
+    <nav>
+        <div class="nav-btns">
+          <a class="nav-btn" href="https://www.venta.lv/"  target="_blank">VeA</a>
+          <a class="nav-btn" href="https://validator.w3.org/" target="_blank">W3 Validator</a>
+          <a class="nav-btn" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML reference</a>
+          <a class="nav-btn" href="https://git-scm.com/" target="_blank">Git</a>
+      </div>     
   </nav>
     <main>
       <article>
-        <h1>Find your little bestfriend's bestfriend!</h1>
+        <div class="container">
+            <h1>Find your little bestfriend's bestfriend!</h1>
+        </div>
       </article>
       <aside>
         <h2>Our users</h2>
-        <table class="customer-table">
-          <tr>
-            <th>🐱</th>
-            <th>🐱</th>
-            <th>Status</th>
-          </tr>
-          <tr>
-            <td>Muris</td>
-            <td>Mia</td>
-            <td>Married</td>
-          </tr>
-          <tr>
-            <td>Rudis</td>
-            <td>Daisy</td>
-            <td>Dating</td>
-          </tr>
-          <tr>
-            <td>Amurs</td>
-            <td>Stella</td>
-            <td>Divorced</td>
-          </tr>
-        </table>
+        <div class="container">
+          <table class="customer-table">
+            <tr>
+              <th>🐱</th>
+              <th>🐱</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Muris</td>
+              <td>Mia</td>
+              <td>Married</td>
+            </tr>
+            <tr>
+              <td>Rudis</td>
+              <td>Daisy</td>
+              <td>Dating</td>
+            </tr>
+            <tr>
+              <td>Amurs</td>
+              <td>Stella</td>
+              <td>Divorced</td>
+            </tr>
+          </table>
+        </div>
       </aside>
 
-      <section>
+      <section class="main-section">
         <h2>Reviews</h2>
-
-        <section>
-          <h3>Muris & Mia</h3>
-          <p>Meow, meow, meow! 😻😻</p>
-        </section>
-
-        <section>
-          <h3>Rudis & Daisy</h3>
-          <p>Meow, meow! Meeooow! 😺😻</p>
-        </section>
-
-        <section>
-          <h3>Amurs & Stella</h3>
-          <p>Meeeo-o-o-oo-w! Rrrr, hissss! 😾😾</p>
-        </section>
+        <div class="container">
+          <section class="sub-section">
+            <h3>Muris & Mia</h3>
+            <p>Meow, meow, meow! 😻😻</p>
+          </section>
+  
+          <section class="sub-section">
+            <h3>Rudis & Daisy</h3>
+            <p>Meow, meow! Meeooow! 😺😻</p>
+          </section>
+  
+          <section class="sub-section">
+            <h3>Amurs & Stella</h3>
+            <p>Meeeo-o-o-oo-w! Rrrr, hissss! 😾😾</p>
+          </section>
+        </div>
       </section>
     </main>
     <footer>
-      <h2>Contact us</h2>
-      <form
+      <div class="container">
+        <form
         method="GET"
         action="mailto:matissp1302@gmail.com"
         enctype="text/plain"
       >
+        <h2>Contact us</h2>
         <label for="name">Your name:</label><br />
         <input type="text" id="name" name="name" /><br />
         <label for="email">Email:</label><br />
         <input type="text" id="email" name="email" /><br />
         <label for="mesasge">Message:</label><br />
         <textarea style="resize: none" id="message"></textarea><br />
-        <input type="submit" value="Submit" />
+        <input class="nav-btn" type="submit" value="Submit" />
       </form>
+      <p>&#x1F431; Matiss Purvins 2023</p>
+      </div>
     </footer>
-  </div>
   </body>
 </html>
